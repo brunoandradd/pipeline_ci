@@ -15,6 +15,7 @@ defmodule PipelineCi.DataCase do
   """
 
   use ExUnit.CaseTemplate
+
   alias  Ecto.Adapters.SQL
 
   using do
