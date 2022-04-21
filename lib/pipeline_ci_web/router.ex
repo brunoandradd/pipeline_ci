@@ -10,6 +10,7 @@ defmodule PipelineCiWeb.Router do
     plug :put_secure_browser_headers
   end
 
+  # coveralls-ignore-start
   pipeline :api do
     plug :accepts, ["json"]
   end
@@ -41,6 +42,8 @@ defmodule PipelineCiWeb.Router do
       live_dashboard "/dashboard", metrics: PipelineCiWeb.Telemetry
     end
   end
+
+  # coveralls-ignore-stop
 
   # Enables the Swoosh mailbox preview in development.
   #

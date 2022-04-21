@@ -3,10 +3,9 @@ import Config
 # Configure your database
 config :pipeline_ci, PipelineCi.Repo,
   username: "postgres",
-  password: "root",
+  password: "postgres",
   hostname: "localhost",
   database: "pipeline_ci_dev",
-  port: 5433,
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
