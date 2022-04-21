@@ -3,7 +3,7 @@ name: verify Tests
 on: pull_request
 
 jobs:
-  lint:
+  coverage:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -32,7 +32,7 @@ jobs:
      services:
        pg:
          image: postgres:12
-         ports: ["5432:5432"]
+         ports: ["5433:5432"]
          env:
            POSTGRES_PASSWORD: root
          options: >-
