@@ -7,8 +7,9 @@ import Config
 # Run `mix help test` for more information.
 config :pipeline_ci, PipelineCi.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "root",
   hostname: "localhost",
+  port: 5433,
   database: "pipeline_ci_test#{System.get_env("MIX_TEST_PARTITION")}",
   pool: Ecto.Adapters.SQL.Sandbox,
   pool_size: 10
