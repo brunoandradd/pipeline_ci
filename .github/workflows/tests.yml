@@ -32,7 +32,7 @@ jobs:
     services:
       pg:
         image: postgres:12
-      ports: ["5433:5432"]
+      ports: ['5433:5432']
       env:
         POSTGRES_PASSWORD: postgres
       options: >-
@@ -40,5 +40,3 @@ jobs:
         --health-interval 10s
         --health-timeout 5s
         --health-retries 5
-
-
