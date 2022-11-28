@@ -1,4 +1,4 @@
-# PipelineCi
+# PipelineCi - Study Project
 
 To start your Phoenix server:
 
